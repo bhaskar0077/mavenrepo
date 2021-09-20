@@ -1,0 +1,4 @@
+springexample\actuator\HelloWorldService.class
+springexample\actuator\ServiceProperties.class
+springexample\actuator\SampleActuatorApplication.class
+springexample\actuator\SampleController.class

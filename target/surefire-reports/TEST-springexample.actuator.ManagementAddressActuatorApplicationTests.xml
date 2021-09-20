@@ -1,0 +1,1433 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="springexample.actuator.ManagementAddressActuatorApplicationTests" time="3.775" tests="2" errors="2" skipped="0" failures="0">
+  <properties>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="java.vm.version" value="11.0.12+8-LTS-237"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-11.0.12\bin"/>
+    <property name="maven.multiModuleProjectDirectory" value="E:\Devops2\maven\spring"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="java.vendor.url" value="https://openjdk.java.net/"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="path.separator" value=";"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="user.script" value=""/>
+    <property name="user.country" value="US"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="user.dir" value="E:\Devops2\maven\spring"/>
+    <property name="java.vm.compressedOopsMode" value="32-bit"/>
+    <property name="java.runtime.version" value="11.0.12+8-LTS-237"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.io.tmpdir" value="C:\Users\welcome\AppData\Local\Temp\"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="user.variant" value=""/>
+    <property name="os.name" value="Windows 10"/>
+    <property name="classworlds.conf" value="C:\apache-maven-3.8.2\bin\m2.conf"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-11.0.12\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files\Git\cmd;C:\Program Files\PuTTY\;C:\Program Files\Java\jdk-11.0.12\bin;C:\apache-maven-3.8.2\bin;C:\Users\welcome\AppData\Local\Microsoft\WindowsApps;;."/>
+    <property name="maven.conf" value="C:\apache-maven-3.8.2/conf"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="java.class.version" value="55.0"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="os.version" value="10.0"/>
+    <property name="user.home" value="C:\Users\welcome"/>
+    <property name="user.timezone" value="Asia/Calcutta"/>
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob"/>
+    <property name="file.encoding" value="Cp1252"/>
+    <property name="java.specification.version" value="11"/>
+    <property name="user.name" value="welcome"/>
+    <property name="java.class.path" value="C:\apache-maven-3.8.2\boot\plexus-classworlds-2.6.0.jar"/>
+    <property name="java.vm.specification.version" value="11"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="sun.java.command" value="org.codehaus.plexus.classworlds.launcher.Launcher package"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-11.0.12"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.version" value="11.0.12"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="sun.stderr.encoding" value="cp437"/>
+    <property name="maven.home" value="C:\apache-maven-3.8.2"/>
+    <property name="file.separator" value="\"/>
+    <property name="java.version.date" value="2021-07-20"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="java.vendor.version" value="18.9"/>
+    <property name="sun.stdout.encoding" value="cp437"/>
+    <property name="sun.desktop" value="windows"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+  </properties>
+  <testcase name="testHome" classname="springexample.actuator.ManagementAddressActuatorApplicationTests" time="2.119">
+    <error message="Failed to load ApplicationContext" type="java.lang.IllegalStateException"><![CDATA[java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContext(CacheAwareContextLoaderDelegate.java:99)
+	at org.springframework.test.context.DefaultTestContext.getApplicationContext(DefaultTestContext.java:101)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:109)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:75)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:319)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:212)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:232)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:89)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:71)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:175)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+Caused by: java.lang.IllegalStateException: Failed to introspect annotations: class org.springframework.boot.autoconfigure.web.EmbeddedServletContainerAutoConfiguration$EmbeddedJetty
+	at org.springframework.core.annotation.AnnotatedElementUtils.process(AnnotatedElementUtils.java:177)
+	at org.springframework.core.annotation.AnnotatedElementUtils.getAllAnnotationAttributes(AnnotatedElementUtils.java:127)
+	at org.springframework.core.type.StandardAnnotationMetadata.getAllAnnotationAttributes(StandardAnnotationMetadata.java:123)
+	at org.springframework.boot.autoconfigure.condition.OnClassCondition.getAttributes(OnClassCondition.java:81)
+	at org.springframework.boot.autoconfigure.condition.OnClassCondition.getMatchOutcome(OnClassCondition.java:45)
+	at org.springframework.boot.autoconfigure.condition.SpringBootCondition.matches(SpringBootCondition.java:44)
+	at org.springframework.context.annotation.ConditionEvaluator.shouldSkip(ConditionEvaluator.java:92)
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:187)
+	at org.springframework.context.annotation.ConfigurationClassParser.processMemberClasses(ConfigurationClassParser.java:294)
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:222)
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:205)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:182)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:152)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:299)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:243)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:254)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:94)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:609)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:464)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:120)
+	at org.springframework.boot.actuate.autoconfigure.EndpointWebMvcAutoConfiguration.createChildManagementContext(EndpointWebMvcAutoConfiguration.java:198)
+	at org.springframework.boot.actuate.autoconfigure.EndpointWebMvcAutoConfiguration.onApplicationEvent(EndpointWebMvcAutoConfiguration.java:119)
+	at org.springframework.boot.actuate.autoconfigure.EndpointWebMvcAutoConfiguration.onApplicationEvent(EndpointWebMvcAutoConfiguration.java:79)
+	at org.springframework.boot.actuate.autoconfigure.EndpointWebMvcAutoConfiguration$$EnhancerBySpringCGLIB$$92e68f41.onApplicationEvent(<generated>)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:98)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:333)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:776)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:142)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:485)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:120)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:648)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:311)
+	at org.springframework.boot.test.SpringApplicationContextLoader.loadContext(SpringApplicationContextLoader.java:88)
+	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContextInternal(CacheAwareContextLoaderDelegate.java:64)
+	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContext(CacheAwareContextLoaderDelegate.java:91)
+	at org.springframework.test.context.DefaultTestContext.getApplicationContext(DefaultTestContext.java:101)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:109)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:75)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:319)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:212)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:232)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:89)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:71)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:175)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+Caused by: java.lang.IllegalStateException: Could not obtain annotation attribute values
+	at org.springframework.core.annotation.AnnotationUtils.getAnnotationAttributes(AnnotationUtils.java:526)
+	at org.springframework.core.annotation.AnnotatedElementUtils$5.process(AnnotatedElementUtils.java:132)
+	at org.springframework.core.annotation.AnnotatedElementUtils$5.process(AnnotatedElementUtils.java:127)
+	at org.springframework.core.annotation.AnnotatedElementUtils.doProcess(AnnotatedElementUtils.java:206)
+	at org.springframework.core.annotation.AnnotatedElementUtils.process(AnnotatedElementUtils.java:173)
+	at org.springframework.core.annotation.AnnotatedElementUtils.getAllAnnotationAttributes(AnnotatedElementUtils.java:127)
+	at org.springframework.core.type.StandardAnnotationMetadata.getAllAnnotationAttributes(StandardAnnotationMetadata.java:123)
+	at org.springframework.boot.autoconfigure.condition.OnClassCondition.getAttributes(OnClassCondition.java:81)
+	at org.springframework.boot.autoconfigure.condition.OnClassCondition.getMatchOutcome(OnClassCondition.java:45)
+	at org.springframework.boot.autoconfigure.condition.SpringBootCondition.matches(SpringBootCondition.java:44)
+	at org.springframework.context.annotation.ConditionEvaluator.shouldSkip(ConditionEvaluator.java:92)
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:187)
+	at org.springframework.context.annotation.ConfigurationClassParser.processMemberClasses(ConfigurationClassParser.java:294)
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:222)
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:205)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:182)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:152)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:299)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:243)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:254)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:94)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:609)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:464)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:120)
+	at org.springframework.boot.actuate.autoconfigure.EndpointWebMvcAutoConfiguration.createChildManagementContext(EndpointWebMvcAutoConfiguration.java:198)
+	at org.springframework.boot.actuate.autoconfigure.EndpointWebMvcAutoConfiguration.onApplicationEvent(EndpointWebMvcAutoConfiguration.java:119)
+	at org.springframework.boot.actuate.autoconfigure.EndpointWebMvcAutoConfiguration.onApplicationEvent(EndpointWebMvcAutoConfiguration.java:79)
+	at org.springframework.boot.actuate.autoconfigure.EndpointWebMvcAutoConfiguration$$EnhancerBySpringCGLIB$$92e68f41.onApplicationEvent(<generated>)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:98)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:333)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:776)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:142)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:485)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:120)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:648)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:311)
+	at org.springframework.boot.test.SpringApplicationContextLoader.loadContext(SpringApplicationContextLoader.java:88)
+	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContextInternal(CacheAwareContextLoaderDelegate.java:64)
+	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContext(CacheAwareContextLoaderDelegate.java:91)
+	at org.springframework.test.context.DefaultTestContext.getApplicationContext(DefaultTestContext.java:101)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:109)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:75)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:319)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:212)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:232)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:89)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:71)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:175)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+Caused by: java.lang.reflect.InvocationTargetException: null
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.core.annotation.AnnotationUtils.getAnnotationAttributes(AnnotationUtils.java:494)
+	at org.springframework.core.annotation.AnnotatedElementUtils$5.process(AnnotatedElementUtils.java:132)
+	at org.springframework.core.annotation.AnnotatedElementUtils$5.process(AnnotatedElementUtils.java:127)
+	at org.springframework.core.annotation.AnnotatedElementUtils.doProcess(AnnotatedElementUtils.java:206)
+	at org.springframework.core.annotation.AnnotatedElementUtils.process(AnnotatedElementUtils.java:173)
+	at org.springframework.core.annotation.AnnotatedElementUtils.getAllAnnotationAttributes(AnnotatedElementUtils.java:127)
+	at org.springframework.core.type.StandardAnnotationMetadata.getAllAnnotationAttributes(StandardAnnotationMetadata.java:123)
+	at org.springframework.boot.autoconfigure.condition.OnClassCondition.getAttributes(OnClassCondition.java:81)
+	at org.springframework.boot.autoconfigure.condition.OnClassCondition.getMatchOutcome(OnClassCondition.java:45)
+	at org.springframework.boot.autoconfigure.condition.SpringBootCondition.matches(SpringBootCondition.java:44)
+	at org.springframework.context.annotation.ConditionEvaluator.shouldSkip(ConditionEvaluator.java:92)
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:187)
+	at org.springframework.context.annotation.ConfigurationClassParser.processMemberClasses(ConfigurationClassParser.java:294)
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:222)
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:205)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:182)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:152)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:299)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:243)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:254)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:94)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:609)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:464)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:120)
+	at org.springframework.boot.actuate.autoconfigure.EndpointWebMvcAutoConfiguration.createChildManagementContext(EndpointWebMvcAutoConfiguration.java:198)
+	at org.springframework.boot.actuate.autoconfigure.EndpointWebMvcAutoConfiguration.onApplicationEvent(EndpointWebMvcAutoConfiguration.java:119)
+	at org.springframework.boot.actuate.autoconfigure.EndpointWebMvcAutoConfiguration.onApplicationEvent(EndpointWebMvcAutoConfiguration.java:79)
+	at org.springframework.boot.actuate.autoconfigure.EndpointWebMvcAutoConfiguration$$EnhancerBySpringCGLIB$$92e68f41.onApplicationEvent(<generated>)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:98)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:333)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:776)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:142)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:485)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:120)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:648)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:311)
+	at org.springframework.boot.test.SpringApplicationContextLoader.loadContext(SpringApplicationContextLoader.java:88)
+	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContextInternal(CacheAwareContextLoaderDelegate.java:64)
+	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContext(CacheAwareContextLoaderDelegate.java:91)
+	at org.springframework.test.context.DefaultTestContext.getApplicationContext(DefaultTestContext.java:101)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:109)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:75)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:319)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:212)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:232)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:89)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:71)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:175)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+Caused by: java.lang.TypeNotPresentException: Type org.eclipse.jetty.server.Server not present
+	at java.base/sun.reflect.annotation.TypeNotPresentExceptionProxy.generateException(TypeNotPresentExceptionProxy.java:46)
+	at java.base/sun.reflect.annotation.AnnotationInvocationHandler.invoke(AnnotationInvocationHandler.java:86)
+	at com.sun.proxy.$Proxy33.value(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.core.annotation.AnnotationUtils.getAnnotationAttributes(AnnotationUtils.java:494)
+	at org.springframework.core.annotation.AnnotatedElementUtils$5.process(AnnotatedElementUtils.java:132)
+	at org.springframework.core.annotation.AnnotatedElementUtils$5.process(AnnotatedElementUtils.java:127)
+	at org.springframework.core.annotation.AnnotatedElementUtils.doProcess(AnnotatedElementUtils.java:206)
+	at org.springframework.core.annotation.AnnotatedElementUtils.process(AnnotatedElementUtils.java:173)
+	at org.springframework.core.annotation.AnnotatedElementUtils.getAllAnnotationAttributes(AnnotatedElementUtils.java:127)
+	at org.springframework.core.type.StandardAnnotationMetadata.getAllAnnotationAttributes(StandardAnnotationMetadata.java:123)
+	at org.springframework.boot.autoconfigure.condition.OnClassCondition.getAttributes(OnClassCondition.java:81)
+	at org.springframework.boot.autoconfigure.condition.OnClassCondition.getMatchOutcome(OnClassCondition.java:45)
+	at org.springframework.boot.autoconfigure.condition.SpringBootCondition.matches(SpringBootCondition.java:44)
+	at org.springframework.context.annotation.ConditionEvaluator.shouldSkip(ConditionEvaluator.java:92)
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:187)
+	at org.springframework.context.annotation.ConfigurationClassParser.processMemberClasses(ConfigurationClassParser.java:294)
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:222)
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:205)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:182)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:152)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:299)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:243)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:254)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:94)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:609)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:464)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:120)
+	at org.springframework.boot.actuate.autoconfigure.EndpointWebMvcAutoConfiguration.createChildManagementContext(EndpointWebMvcAutoConfiguration.java:198)
+	at org.springframework.boot.actuate.autoconfigure.EndpointWebMvcAutoConfiguration.onApplicationEvent(EndpointWebMvcAutoConfiguration.java:119)
+	at org.springframework.boot.actuate.autoconfigure.EndpointWebMvcAutoConfiguration.onApplicationEvent(EndpointWebMvcAutoConfiguration.java:79)
+	at org.springframework.boot.actuate.autoconfigure.EndpointWebMvcAutoConfiguration$$EnhancerBySpringCGLIB$$92e68f41.onApplicationEvent(<generated>)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:98)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:333)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:776)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:142)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:485)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:120)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:648)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:311)
+	at org.springframework.boot.test.SpringApplicationContextLoader.loadContext(SpringApplicationContextLoader.java:88)
+	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContextInternal(CacheAwareContextLoaderDelegate.java:64)
+	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContext(CacheAwareContextLoaderDelegate.java:91)
+	at org.springframework.test.context.DefaultTestContext.getApplicationContext(DefaultTestContext.java:101)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:109)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:75)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:319)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:212)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:232)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:89)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:71)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:175)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+Caused by: java.lang.ClassNotFoundException: org.eclipse.jetty.server.Server
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:581)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:178)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:398)
+	at java.base/sun.reflect.generics.factory.CoreReflectionFactory.makeNamedType(CoreReflectionFactory.java:114)
+	at java.base/sun.reflect.generics.visitor.Reifier.visitClassTypeSignature(Reifier.java:125)
+	at java.base/sun.reflect.generics.tree.ClassTypeSignature.accept(ClassTypeSignature.java:49)
+	at java.base/sun.reflect.annotation.AnnotationParser.parseSig(AnnotationParser.java:440)
+	at java.base/sun.reflect.annotation.AnnotationParser.parseClassValue(AnnotationParser.java:421)
+	at java.base/sun.reflect.annotation.AnnotationParser.lambda$parseClassArray$0(AnnotationParser.java:719)
+	at java.base/sun.reflect.annotation.AnnotationParser.parseArrayElements(AnnotationParser.java:747)
+	at java.base/sun.reflect.annotation.AnnotationParser.parseClassArray(AnnotationParser.java:718)
+	at java.base/sun.reflect.annotation.AnnotationParser.parseArray(AnnotationParser.java:532)
+	at java.base/sun.reflect.annotation.AnnotationParser.parseMemberValue(AnnotationParser.java:356)
+	at java.base/sun.reflect.annotation.AnnotationParser.parseAnnotation2(AnnotationParser.java:287)
+	at java.base/sun.reflect.annotation.AnnotationParser.parseAnnotations2(AnnotationParser.java:121)
+	at java.base/sun.reflect.annotation.AnnotationParser.parseAnnotations(AnnotationParser.java:73)
+	at java.base/java.lang.Class.createAnnotationData(Class.java:3757)
+	at java.base/java.lang.Class.annotationData(Class.java:3746)
+	at java.base/java.lang.Class.getAnnotations(Class.java:3682)
+	at org.springframework.context.annotation.ConfigurationClassParser.asSourceClass(ConfigurationClassParser.java:531)
+	at org.springframework.context.annotation.ConfigurationClassParser$SourceClass.getMemberClasses(ConfigurationClassParser.java:696)
+	at org.springframework.context.annotation.ConfigurationClassParser.processMemberClasses(ConfigurationClassParser.java:292)
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:222)
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:205)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:182)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:152)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:299)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:243)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:254)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:94)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:609)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:464)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:120)
+	at org.springframework.boot.actuate.autoconfigure.EndpointWebMvcAutoConfiguration.createChildManagementContext(EndpointWebMvcAutoConfiguration.java:198)
+	at org.springframework.boot.actuate.autoconfigure.EndpointWebMvcAutoConfiguration.onApplicationEvent(EndpointWebMvcAutoConfiguration.java:119)
+	at org.springframework.boot.actuate.autoconfigure.EndpointWebMvcAutoConfiguration.onApplicationEvent(EndpointWebMvcAutoConfiguration.java:79)
+	at org.springframework.boot.actuate.autoconfigure.EndpointWebMvcAutoConfiguration$$EnhancerBySpringCGLIB$$92e68f41.onApplicationEvent(<generated>)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:98)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:333)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:776)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:142)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:485)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:120)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:648)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:311)
+	at org.springframework.boot.test.SpringApplicationContextLoader.loadContext(SpringApplicationContextLoader.java:88)
+	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContextInternal(CacheAwareContextLoaderDelegate.java:64)
+	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContext(CacheAwareContextLoaderDelegate.java:91)
+	at org.springframework.test.context.DefaultTestContext.getApplicationContext(DefaultTestContext.java:101)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:109)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:75)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:319)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:212)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:232)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:89)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:71)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:175)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+]]></error>
+    <system-out>2021-09-20 20:50:45.713  INFO 11516 --- [           main] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@2766ca9d: startup date [Mon Sep 20 20:50:37 IST 2021]; root of context hierarchy
+2021-09-20 20:50:45.714  INFO 11516 --- [           main] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 0
+2021-09-20 20:50:45.716  INFO 11516 --- [           main] o.s.b.a.e.jmx.EndpointMBeanExporter      : Unregistering JMX-exposed beans on shutdown
+2021-09-20 20:50:45.717  INFO 11516 --- [           main] org.crsh.ssh.SSHPlugin                   : Shutting down SSHD
+2021-09-20 20:50:45.737  INFO 11516 --- [           main] o.apache.catalina.core.StandardService   : Stopping service Tomcat
+2021-09-20 20:50:45.747  INFO 11516 --- [ost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Destroying Spring FrameworkServlet 'dispatcherServlet'
+2021-09-20 20:50:45.770 ERROR 11516 --- [ost-startStop-1] o.a.catalina.loader.WebappClassLoader    : Failed to clear ResourceBundle references for web application []
+
+java.lang.NoSuchFieldException: loaderRef
+	at java.base/java.lang.Class.getDeclaredField(Class.java:2411)
+	at org.apache.catalina.loader.WebappClassLoader.clearReferencesResourceBundles(WebappClassLoader.java:2785)
+	at org.apache.catalina.loader.WebappClassLoader.clearReferences(WebappClassLoader.java:2024)
+	at org.apache.catalina.loader.WebappClassLoader.stop(WebappClassLoader.java:1906)
+	at org.apache.catalina.loader.WebappLoader.stopInternal(WebappLoader.java:661)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:232)
+	at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:5702)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:232)
+	at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1575)
+	at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1564)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+2021-09-20 20:50:45.797  INFO 11516 --- [           main] o.s.test.context.TestContextManager      : Could not instantiate TestExecutionListener class [org.springframework.test.context.transaction.TransactionalTestExecutionListener]. Specify custom listener classes or make the default listener classes (and their dependencies) available.
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v1.0.2.RELEASE)
+
+2021-09-20 20:50:45.941  INFO 11516 --- [           main] o.a.maven.surefire.booter.ForkedBooter   : Starting ForkedBooter v2.15 on DESKTOP-9P2NR0F with PID 11516 (C:\Users\welcome\.m2\repository\org\apache\maven\surefire\surefire-booter\2.15\surefire-booter-2.15.jar started by welcome in E:\Devops2\maven\spring)
+2021-09-20 20:50:45.943  INFO 11516 --- [           main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@10fb4575: startup date [Mon Sep 20 20:50:45 IST 2021]; root of context hierarchy
+2021-09-20 20:50:46.197  INFO 11516 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'beanNameViewResolver': replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.actuate.autoconfigure.ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration; factoryMethodName=beanNameViewResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/actuate/autoconfigure/ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter; factoryMethodName=beanNameViewResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter.class]]
+2021-09-20 20:50:46.310  INFO 11516 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'ignoredPathsWebSecurityConfigurerAdapter': replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.security.SpringBootWebSecurityConfiguration; factoryMethodName=ignoredPathsWebSecurityConfigurerAdapter; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/security/SpringBootWebSecurityConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.actuate.autoconfigure.ManagementSecurityAutoConfiguration; factoryMethodName=ignoredPathsWebSecurityConfigurerAdapter; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/actuate/autoconfigure/ManagementSecurityAutoConfiguration.class]]
+2021-09-20 20:50:46.673  INFO 11516 --- [           main] .t.TomcatEmbeddedServletContainerFactory : Server initialized with port: 0
+2021-09-20 20:50:46.677  INFO 11516 --- [           main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2021-09-20 20:50:46.677  INFO 11516 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/7.0.52
+2021-09-20 20:50:46.697  INFO 11516 --- [ost-startStop-1] org.apache.catalina.loader.WebappLoader  : Unknown loader jdk.internal.loader.ClassLoaders$AppClassLoader@2cdf8d8a class jdk.internal.loader.ClassLoaders$AppClassLoader
+2021-09-20 20:50:46.697  INFO 11516 --- [ost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-09-20 20:50:46.697  INFO 11516 --- [ost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 755 ms
+2021-09-20 20:50:47.234  INFO 11516 --- [ost-startStop-1] b.a.s.AuthenticationManagerConfiguration : 
+
+Using default password for application endpoints: 436d8a01-ec1e-424b-825d-ef70e314c202
+
+
+2021-09-20 20:50:47.247  INFO 11516 --- [ost-startStop-1] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/css/**'], []
+2021-09-20 20:50:47.248  INFO 11516 --- [ost-startStop-1] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/js/**'], []
+2021-09-20 20:50:47.249  INFO 11516 --- [ost-startStop-1] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/images/**'], []
+2021-09-20 20:50:47.249  INFO 11516 --- [ost-startStop-1] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/**/favicon.ico'], []
+2021-09-20 20:50:47.249  INFO 11516 --- [ost-startStop-1] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/health'], []
+2021-09-20 20:50:47.250  INFO 11516 --- [ost-startStop-1] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/info'], []
+2021-09-20 20:50:47.250  INFO 11516 --- [ost-startStop-1] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/error'], []
+2021-09-20 20:50:47.257  INFO 11516 --- [ost-startStop-1] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/mappings'], Ant [pattern='/mappings/'], Ant [pattern='/mappings.*'], Ant [pattern='/env'], Ant [pattern='/env/'], Ant [pattern='/env.*'], Ant [pattern='/beans'], Ant [pattern='/beans/'], Ant [pattern='/beans.*'], Ant [pattern='/metrics'], Ant [pattern='/metrics/'], Ant [pattern='/metrics.*'], Ant [pattern='/configprops'], Ant [pattern='/configprops/'], Ant [pattern='/configprops.*'], Ant [pattern='/autoconfig'], Ant [pattern='/autoconfig/'], Ant [pattern='/autoconfig.*'], Ant [pattern='/shutdown'], Ant [pattern='/shutdown/'], Ant [pattern='/shutdown.*'], Ant [pattern='/trace'], Ant [pattern='/trace/'], Ant [pattern='/trace.*'], Ant [pattern='/dump'], Ant [pattern='/dump/'], Ant [pattern='/dump.*']]], [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1a4f2c37, org.springframework.security.web.context.SecurityContextPersistenceFilter@2bad74e9, org.springframework.security.web.header.HeaderWriterFilter@224c0e33, org.springframework.security.web.authentication.logout.LogoutFilter@74ec1e8a, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@1fda1928, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@6d2c4694, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2fd3e094, org.springframework.security.web.session.SessionManagementFilter@25dfd76b, org.springframework.security.web.access.ExceptionTranslationFilter@474030f8, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@b565e86]
+2021-09-20 20:50:47.275  INFO 11516 --- [ost-startStop-1] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/**']]], [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2f242de6, org.springframework.security.web.context.SecurityContextPersistenceFilter@53cbca21, org.springframework.security.web.header.HeaderWriterFilter@5d044c45, org.springframework.security.web.authentication.logout.LogoutFilter@22ba11fa, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@6a26cad1, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@73911231, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@c880e62, org.springframework.security.web.session.SessionManagementFilter@6cc84a9b, org.springframework.security.web.access.ExceptionTranslationFilter@41fc30d1, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@18e13df6]
+2021-09-20 20:50:47.339  INFO 11516 --- [ost-startStop-1] o.s.b.c.e.ServletRegistrationBean        : Mapping servlet: 'dispatcherServlet' to [/]
+2021-09-20 20:50:47.344  INFO 11516 --- [ost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'metricFilter' to: [/*]
+2021-09-20 20:50:47.344  INFO 11516 --- [ost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2021-09-20 20:50:47.344  INFO 11516 --- [ost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'springSecurityFilterChain' to: [/*]
+2021-09-20 20:50:47.345  INFO 11516 --- [ost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'applicationContextIdFilter' to: [/*]
+2021-09-20 20:50:47.345  INFO 11516 --- [ost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'webRequestLoggingFilter' to: [/*]
+2021-09-20 20:50:47.502  INFO 11516 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-09-20 20:50:47.509  INFO 11516 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/foo],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String springexample.actuator.SampleController.foo()
+2021-09-20 20:50:47.510  INFO 11516 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.Map&lt;java.lang.String, java.lang.String&gt; springexample.actuator.SampleController.helloWorld()
+2021-09-20 20:50:47.516  INFO 11516 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.http.ResponseEntity&lt;java.util.Map&lt;java.lang.String, java.lang.Object&gt;&gt; org.springframework.boot.actuate.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2021-09-20 20:50:47.516  INFO 11516 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],methods=[],params=[],headers=[],consumes=[],produces=[text/html],custom=[]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.actuate.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest)
+2021-09-20 20:50:47.528  INFO 11516 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-09-20 20:50:47.528  INFO 11516 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-09-20 20:50:47.656  INFO 11516 --- [           main] .CrshAutoConfiguration$CrshBootstrapBean : Configuring property auth=spring from properties
+2021-09-20 20:50:47.657  INFO 11516 --- [           main] .CrshAutoConfiguration$CrshBootstrapBean : Configuring property ssh.port=2222 from properties
+2021-09-20 20:50:47.661  INFO 11516 --- [           main] .CrshAutoConfiguration$CrshBootstrapBean : Configuring property auth.spring.roles=ADMIN from properties
+2021-09-20 20:50:47.678  INFO 11516 --- [           main] org.crsh.ssh.SSHPlugin                   : Booting SSHD
+2021-09-20 20:50:47.683  INFO 11516 --- [           main] org.crsh.ssh.term.SSHLifeCycle           : About to start CRaSSHD
+2021-09-20 20:50:47.699  INFO 11516 --- [           main] org.crsh.ssh.term.SSHLifeCycle           : CRaSSHD started on port 2222
+2021-09-20 20:50:47.715  INFO 11516 --- [           main] o.s.b.a.e.jmx.EndpointMBeanExporter      : Registering beans for JMX exposure on startup
+2021-09-20 20:50:47.716  INFO 11516 --- [           main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 0
+2021-09-20 20:50:47.717  INFO 11516 --- [           main] o.s.b.a.e.jmx.EndpointMBeanExporter      : Located managed bean 'requestMappingEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=requestMappingEndpoint]
+2021-09-20 20:50:47.729  INFO 11516 --- [           main] o.s.b.a.e.jmx.EndpointMBeanExporter      : Located managed bean 'environmentEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=environmentEndpoint]
+2021-09-20 20:50:47.734  INFO 11516 --- [           main] o.s.b.a.e.jmx.EndpointMBeanExporter      : Located managed bean 'healthEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=healthEndpoint]
+2021-09-20 20:50:47.744  INFO 11516 --- [           main] o.s.b.a.e.jmx.EndpointMBeanExporter      : Located managed bean 'beansEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=beansEndpoint]
+2021-09-20 20:50:47.763  INFO 11516 --- [           main] o.s.b.a.e.jmx.EndpointMBeanExporter      : Located managed bean 'infoEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=infoEndpoint]
+2021-09-20 20:50:47.766  INFO 11516 --- [           main] o.s.b.a.e.jmx.EndpointMBeanExporter      : Located managed bean 'metricsEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=metricsEndpoint]
+2021-09-20 20:50:47.773  INFO 11516 --- [           main] o.s.b.a.e.jmx.EndpointMBeanExporter      : Located managed bean 'traceEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=traceEndpoint]
+2021-09-20 20:50:47.780  INFO 11516 --- [           main] o.s.b.a.e.jmx.EndpointMBeanExporter      : Located managed bean 'dumpEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=dumpEndpoint]
+2021-09-20 20:50:47.790  INFO 11516 --- [           main] o.s.b.a.e.jmx.EndpointMBeanExporter      : Located managed bean 'autoConfigurationAuditEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=autoConfigurationAuditEndpoint]
+2021-09-20 20:50:47.793  INFO 11516 --- [           main] o.s.b.a.e.jmx.EndpointMBeanExporter      : Located managed bean 'shutdownEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=shutdownEndpoint]
+2021-09-20 20:50:47.799  INFO 11516 --- [           main] o.s.b.a.e.jmx.EndpointMBeanExporter      : Located managed bean 'configurationPropertiesReportEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=configurationPropertiesReportEndpoint]
+2021-09-20 20:50:47.811  INFO 11516 --- [           main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6e5f5478: startup date [Mon Sep 20 20:50:47 IST 2021]; parent: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@10fb4575
+2021-09-20 20:50:47.827  INFO 11516 --- [           main] o.apache.catalina.core.StandardService   : Stopping service Tomcat
+2021-09-20 20:50:47.830 ERROR 11516 --- [ost-startStop-1] o.a.catalina.loader.WebappClassLoader    : Failed to clear ResourceBundle references for web application []
+
+java.lang.NoSuchFieldException: loaderRef
+	at java.base/java.lang.Class.getDeclaredField(Class.java:2411)
+	at org.apache.catalina.loader.WebappClassLoader.clearReferencesResourceBundles(WebappClassLoader.java:2785)
+	at org.apache.catalina.loader.WebappClassLoader.clearReferences(WebappClassLoader.java:2024)
+	at org.apache.catalina.loader.WebappClassLoader.stop(WebappClassLoader.java:1906)
+	at org.apache.catalina.loader.WebappLoader.stopInternal(WebappLoader.java:661)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:232)
+	at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:5702)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:232)
+	at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1575)
+	at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1564)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+2021-09-20 20:50:47.845  INFO 11516 --- [           main] .b.l.ClasspathLoggingApplicationListener : Application failed to start with classpath: unknown
+2021-09-20 20:50:47.847  INFO 11516 --- [           main] utoConfigurationReportLoggingInitializer : 
+
+Error starting ApplicationContext. To display the auto-configuration report enabled debug logging (start with --debug)
+
+
+2021-09-20 20:50:47.847  INFO 11516 --- [           main] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@10fb4575: startup date [Mon Sep 20 20:50:45 IST 2021]; root of context hierarchy
+2021-09-20 20:50:47.848  INFO 11516 --- [           main] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6e5f5478: startup date [Mon Sep 20 20:50:47 IST 2021]; parent: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@10fb4575
+2021-09-20 20:50:47.849  WARN 11516 --- [           main] ationConfigEmbeddedWebApplicationContext : Exception thrown from ApplicationListener handling ContextClosedEvent
+
+java.lang.IllegalStateException: ApplicationEventMulticaster not initialized - call 'refresh' before multicasting events via the context: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6e5f5478: startup date [Mon Sep 20 20:50:47 IST 2021]; parent: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@10fb4575
+	at org.springframework.context.support.AbstractApplicationContext.getApplicationEventMulticaster(AbstractApplicationContext.java:346)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:333)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:880)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.doClose(EmbeddedWebApplicationContext.java:152)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:841)
+	at org.springframework.boot.actuate.autoconfigure.EndpointWebMvcAutoConfiguration$1.onApplicationEvent(EndpointWebMvcAutoConfiguration.java:192)
+	at org.springframework.boot.actuate.autoconfigure.EndpointWebMvcAutoConfiguration$1.onApplicationEvent(EndpointWebMvcAutoConfiguration.java:188)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:98)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:333)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:880)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.doClose(EmbeddedWebApplicationContext.java:152)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:841)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:329)
+	at org.springframework.boot.test.SpringApplicationContextLoader.loadContext(SpringApplicationContextLoader.java:88)
+	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContextInternal(CacheAwareContextLoaderDelegate.java:64)
+	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContext(CacheAwareContextLoaderDelegate.java:91)
+	at org.springframework.test.context.DefaultTestContext.getApplicationContext(DefaultTestContext.java:101)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:109)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:75)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:319)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:212)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:232)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:89)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:71)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:175)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+
+2021-09-20 20:50:47.850  WARN 11516 --- [           main] ationConfigEmbeddedWebApplicationContext : Exception thrown from LifecycleProcessor on context close
+
+java.lang.IllegalStateException: LifecycleProcessor not initialized - call 'refresh' before invoking lifecycle methods via the context: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6e5f5478: startup date [Mon Sep 20 20:50:47 IST 2021]; parent: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@10fb4575
+	at org.springframework.context.support.AbstractApplicationContext.getLifecycleProcessor(AbstractApplicationContext.java:359)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:888)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.doClose(EmbeddedWebApplicationContext.java:152)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:841)
+	at org.springframework.boot.actuate.autoconfigure.EndpointWebMvcAutoConfiguration$1.onApplicationEvent(EndpointWebMvcAutoConfiguration.java:192)
+	at org.springframework.boot.actuate.autoconfigure.EndpointWebMvcAutoConfiguration$1.onApplicationEvent(EndpointWebMvcAutoConfiguration.java:188)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:98)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:333)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:880)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.doClose(EmbeddedWebApplicationContext.java:152)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:841)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:329)
+	at org.springframework.boot.test.SpringApplicationContextLoader.loadContext(SpringApplicationContextLoader.java:88)
+	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContextInternal(CacheAwareContextLoaderDelegate.java:64)
+	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContext(CacheAwareContextLoaderDelegate.java:91)
+	at org.springframework.test.context.DefaultTestContext.getApplicationContext(DefaultTestContext.java:101)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:109)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:75)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:319)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:212)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:232)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:89)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:71)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:175)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+
+2021-09-20 20:50:47.864  INFO 11516 --- [           main] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 0
+2021-09-20 20:50:47.865  INFO 11516 --- [           main] o.s.b.a.e.jmx.EndpointMBeanExporter      : Unregistering JMX-exposed beans on shutdown
+2021-09-20 20:50:47.865  INFO 11516 --- [           main] org.crsh.ssh.SSHPlugin                   : Shutting down SSHD
+2021-09-20 20:50:47.884 ERROR 11516 --- [           main] o.s.test.context.TestContextManager      : Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@63187d63] to prepare test instance [springexample.actuator.ManagementAddressActuatorApplicationTests@1ccdc7aa]
+
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContext(CacheAwareContextLoaderDelegate.java:99)
+	at org.springframework.test.context.DefaultTestContext.getApplicationContext(DefaultTestContext.java:101)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:109)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:75)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:319)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:212)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:232)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:89)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:71)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:175)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+Caused by: java.lang.IllegalStateException: Failed to introspect annotations: class org.springframework.boot.autoconfigure.web.EmbeddedServletContainerAutoConfiguration$EmbeddedJetty
+	at org.springframework.core.annotation.AnnotatedElementUtils.process(AnnotatedElementUtils.java:177)
+	at org.springframework.core.annotation.AnnotatedElementUtils.getAllAnnotationAttributes(AnnotatedElementUtils.java:127)
+	at org.springframework.core.type.StandardAnnotationMetadata.getAllAnnotationAttributes(StandardAnnotationMetadata.java:123)
+	at org.springframework.boot.autoconfigure.condition.OnClassCondition.getAttributes(OnClassCondition.java:81)
+	at org.springframework.boot.autoconfigure.condition.OnClassCondition.getMatchOutcome(OnClassCondition.java:45)
+	at org.springframework.boot.autoconfigure.condition.SpringBootCondition.matches(SpringBootCondition.java:44)
+	at org.springframework.context.annotation.ConditionEvaluator.shouldSkip(ConditionEvaluator.java:92)
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:187)
+	at org.springframework.context.annotation.ConfigurationClassParser.processMemberClasses(ConfigurationClassParser.java:294)
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:222)
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:205)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:182)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:152)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:299)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:243)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:254)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:94)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:609)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:464)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:120)
+	at org.springframework.boot.actuate.autoconfigure.EndpointWebMvcAutoConfiguration.createChildManagementContext(EndpointWebMvcAutoConfiguration.java:198)
+	at org.springframework.boot.actuate.autoconfigure.EndpointWebMvcAutoConfiguration.onApplicationEvent(EndpointWebMvcAutoConfiguration.java:119)
+	at org.springframework.boot.actuate.autoconfigure.EndpointWebMvcAutoConfiguration.onApplicationEvent(EndpointWebMvcAutoConfiguration.java:79)
+	at org.springframework.boot.actuate.autoconfigure.EndpointWebMvcAutoConfiguration$$EnhancerBySpringCGLIB$$92e68f41.onApplicationEvent(&lt;generated&gt;)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:98)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:333)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:776)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:142)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:485)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:120)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:648)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:311)
+	at org.springframework.boot.test.SpringApplicationContextLoader.loadContext(SpringApplicationContextLoader.java:88)
+	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContextInternal(CacheAwareContextLoaderDelegate.java:64)
+	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContext(CacheAwareContextLoaderDelegate.java:91)
+	... 25 common frames omitted
+Caused by: java.lang.IllegalStateException: Could not obtain annotation attribute values
+	at org.springframework.core.annotation.AnnotationUtils.getAnnotationAttributes(AnnotationUtils.java:526)
+	at org.springframework.core.annotation.AnnotatedElementUtils$5.process(AnnotatedElementUtils.java:132)
+	at org.springframework.core.annotation.AnnotatedElementUtils$5.process(AnnotatedElementUtils.java:127)
+	at org.springframework.core.annotation.AnnotatedElementUtils.doProcess(AnnotatedElementUtils.java:206)
+	at org.springframework.core.annotation.AnnotatedElementUtils.process(AnnotatedElementUtils.java:173)
+	... 59 common frames omitted
+Caused by: java.lang.reflect.InvocationTargetException: null
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.core.annotation.AnnotationUtils.getAnnotationAttributes(AnnotationUtils.java:494)
+	... 63 common frames omitted
+Caused by: java.lang.TypeNotPresentException: Type org.eclipse.jetty.server.Server not present
+	at java.base/sun.reflect.annotation.TypeNotPresentExceptionProxy.generateException(TypeNotPresentExceptionProxy.java:46)
+	at java.base/sun.reflect.annotation.AnnotationInvocationHandler.invoke(AnnotationInvocationHandler.java:86)
+	at com.sun.proxy.$Proxy33.value(Unknown Source)
+	... 68 common frames omitted
+Caused by: java.lang.ClassNotFoundException: org.eclipse.jetty.server.Server
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:581)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:178)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:398)
+	at java.base/sun.reflect.generics.factory.CoreReflectionFactory.makeNamedType(CoreReflectionFactory.java:114)
+	at java.base/sun.reflect.generics.visitor.Reifier.visitClassTypeSignature(Reifier.java:125)
+	at java.base/sun.reflect.generics.tree.ClassTypeSignature.accept(ClassTypeSignature.java:49)
+	at java.base/sun.reflect.annotation.AnnotationParser.parseSig(AnnotationParser.java:440)
+	at java.base/sun.reflect.annotation.AnnotationParser.parseClassValue(AnnotationParser.java:421)
+	at java.base/sun.reflect.annotation.AnnotationParser.lambda$parseClassArray$0(AnnotationParser.java:719)
+	at java.base/sun.reflect.annotation.AnnotationParser.parseArrayElements(AnnotationParser.java:747)
+	at java.base/sun.reflect.annotation.AnnotationParser.parseClassArray(AnnotationParser.java:718)
+	at java.base/sun.reflect.annotation.AnnotationParser.parseArray(AnnotationParser.java:532)
+	at java.base/sun.reflect.annotation.AnnotationParser.parseMemberValue(AnnotationParser.java:356)
+	at java.base/sun.reflect.annotation.AnnotationParser.parseAnnotation2(AnnotationParser.java:287)
+	at java.base/sun.reflect.annotation.AnnotationParser.parseAnnotations2(AnnotationParser.java:121)
+	at java.base/sun.reflect.annotation.AnnotationParser.parseAnnotations(AnnotationParser.java:73)
+	at java.base/java.lang.Class.createAnnotationData(Class.java:3757)
+	at java.base/java.lang.Class.annotationData(Class.java:3746)
+	at java.base/java.lang.Class.getAnnotations(Class.java:3682)
+	at org.springframework.context.annotation.ConfigurationClassParser.asSourceClass(ConfigurationClassParser.java:531)
+	at org.springframework.context.annotation.ConfigurationClassParser$SourceClass.getMemberClasses(ConfigurationClassParser.java:696)
+	at org.springframework.context.annotation.ConfigurationClassParser.processMemberClasses(ConfigurationClassParser.java:292)
+	... 51 common frames omitted
+
+</system-out>
+  </testcase>
+  <testcase name="testHealth" classname="springexample.actuator.ManagementAddressActuatorApplicationTests" time="1.656">
+    <error message="Failed to load ApplicationContext" type="java.lang.IllegalStateException"><![CDATA[java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContext(CacheAwareContextLoaderDelegate.java:99)
+	at org.springframework.test.context.DefaultTestContext.getApplicationContext(DefaultTestContext.java:101)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:109)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:75)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:319)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:212)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:232)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:89)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:71)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:175)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+Caused by: java.lang.IllegalStateException: Failed to introspect annotations: class org.springframework.boot.autoconfigure.web.EmbeddedServletContainerAutoConfiguration$EmbeddedJetty
+	at org.springframework.core.annotation.AnnotatedElementUtils.process(AnnotatedElementUtils.java:177)
+	at org.springframework.core.annotation.AnnotatedElementUtils.getAllAnnotationAttributes(AnnotatedElementUtils.java:127)
+	at org.springframework.core.type.StandardAnnotationMetadata.getAllAnnotationAttributes(StandardAnnotationMetadata.java:123)
+	at org.springframework.boot.autoconfigure.condition.OnClassCondition.getAttributes(OnClassCondition.java:81)
+	at org.springframework.boot.autoconfigure.condition.OnClassCondition.getMatchOutcome(OnClassCondition.java:45)
+	at org.springframework.boot.autoconfigure.condition.SpringBootCondition.matches(SpringBootCondition.java:44)
+	at org.springframework.context.annotation.ConditionEvaluator.shouldSkip(ConditionEvaluator.java:92)
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:187)
+	at org.springframework.context.annotation.ConfigurationClassParser.processMemberClasses(ConfigurationClassParser.java:294)
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:222)
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:205)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:182)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:152)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:299)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:243)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:254)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:94)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:609)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:464)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:120)
+	at org.springframework.boot.actuate.autoconfigure.EndpointWebMvcAutoConfiguration.createChildManagementContext(EndpointWebMvcAutoConfiguration.java:198)
+	at org.springframework.boot.actuate.autoconfigure.EndpointWebMvcAutoConfiguration.onApplicationEvent(EndpointWebMvcAutoConfiguration.java:119)
+	at org.springframework.boot.actuate.autoconfigure.EndpointWebMvcAutoConfiguration.onApplicationEvent(EndpointWebMvcAutoConfiguration.java:79)
+	at org.springframework.boot.actuate.autoconfigure.EndpointWebMvcAutoConfiguration$$EnhancerBySpringCGLIB$$92e68f41.onApplicationEvent(<generated>)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:98)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:333)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:776)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:142)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:485)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:120)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:648)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:311)
+	at org.springframework.boot.test.SpringApplicationContextLoader.loadContext(SpringApplicationContextLoader.java:88)
+	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContextInternal(CacheAwareContextLoaderDelegate.java:64)
+	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContext(CacheAwareContextLoaderDelegate.java:91)
+	at org.springframework.test.context.DefaultTestContext.getApplicationContext(DefaultTestContext.java:101)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:109)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:75)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:319)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:212)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:232)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:89)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:71)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:175)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+Caused by: java.lang.IllegalStateException: Could not obtain annotation attribute values
+	at org.springframework.core.annotation.AnnotationUtils.getAnnotationAttributes(AnnotationUtils.java:526)
+	at org.springframework.core.annotation.AnnotatedElementUtils$5.process(AnnotatedElementUtils.java:132)
+	at org.springframework.core.annotation.AnnotatedElementUtils$5.process(AnnotatedElementUtils.java:127)
+	at org.springframework.core.annotation.AnnotatedElementUtils.doProcess(AnnotatedElementUtils.java:206)
+	at org.springframework.core.annotation.AnnotatedElementUtils.process(AnnotatedElementUtils.java:173)
+	at org.springframework.core.annotation.AnnotatedElementUtils.getAllAnnotationAttributes(AnnotatedElementUtils.java:127)
+	at org.springframework.core.type.StandardAnnotationMetadata.getAllAnnotationAttributes(StandardAnnotationMetadata.java:123)
+	at org.springframework.boot.autoconfigure.condition.OnClassCondition.getAttributes(OnClassCondition.java:81)
+	at org.springframework.boot.autoconfigure.condition.OnClassCondition.getMatchOutcome(OnClassCondition.java:45)
+	at org.springframework.boot.autoconfigure.condition.SpringBootCondition.matches(SpringBootCondition.java:44)
+	at org.springframework.context.annotation.ConditionEvaluator.shouldSkip(ConditionEvaluator.java:92)
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:187)
+	at org.springframework.context.annotation.ConfigurationClassParser.processMemberClasses(ConfigurationClassParser.java:294)
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:222)
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:205)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:182)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:152)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:299)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:243)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:254)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:94)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:609)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:464)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:120)
+	at org.springframework.boot.actuate.autoconfigure.EndpointWebMvcAutoConfiguration.createChildManagementContext(EndpointWebMvcAutoConfiguration.java:198)
+	at org.springframework.boot.actuate.autoconfigure.EndpointWebMvcAutoConfiguration.onApplicationEvent(EndpointWebMvcAutoConfiguration.java:119)
+	at org.springframework.boot.actuate.autoconfigure.EndpointWebMvcAutoConfiguration.onApplicationEvent(EndpointWebMvcAutoConfiguration.java:79)
+	at org.springframework.boot.actuate.autoconfigure.EndpointWebMvcAutoConfiguration$$EnhancerBySpringCGLIB$$92e68f41.onApplicationEvent(<generated>)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:98)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:333)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:776)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:142)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:485)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:120)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:648)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:311)
+	at org.springframework.boot.test.SpringApplicationContextLoader.loadContext(SpringApplicationContextLoader.java:88)
+	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContextInternal(CacheAwareContextLoaderDelegate.java:64)
+	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContext(CacheAwareContextLoaderDelegate.java:91)
+	at org.springframework.test.context.DefaultTestContext.getApplicationContext(DefaultTestContext.java:101)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:109)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:75)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:319)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:212)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:232)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:89)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:71)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:175)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+Caused by: java.lang.reflect.InvocationTargetException: null
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.core.annotation.AnnotationUtils.getAnnotationAttributes(AnnotationUtils.java:494)
+	at org.springframework.core.annotation.AnnotatedElementUtils$5.process(AnnotatedElementUtils.java:132)
+	at org.springframework.core.annotation.AnnotatedElementUtils$5.process(AnnotatedElementUtils.java:127)
+	at org.springframework.core.annotation.AnnotatedElementUtils.doProcess(AnnotatedElementUtils.java:206)
+	at org.springframework.core.annotation.AnnotatedElementUtils.process(AnnotatedElementUtils.java:173)
+	at org.springframework.core.annotation.AnnotatedElementUtils.getAllAnnotationAttributes(AnnotatedElementUtils.java:127)
+	at org.springframework.core.type.StandardAnnotationMetadata.getAllAnnotationAttributes(StandardAnnotationMetadata.java:123)
+	at org.springframework.boot.autoconfigure.condition.OnClassCondition.getAttributes(OnClassCondition.java:81)
+	at org.springframework.boot.autoconfigure.condition.OnClassCondition.getMatchOutcome(OnClassCondition.java:45)
+	at org.springframework.boot.autoconfigure.condition.SpringBootCondition.matches(SpringBootCondition.java:44)
+	at org.springframework.context.annotation.ConditionEvaluator.shouldSkip(ConditionEvaluator.java:92)
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:187)
+	at org.springframework.context.annotation.ConfigurationClassParser.processMemberClasses(ConfigurationClassParser.java:294)
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:222)
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:205)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:182)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:152)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:299)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:243)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:254)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:94)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:609)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:464)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:120)
+	at org.springframework.boot.actuate.autoconfigure.EndpointWebMvcAutoConfiguration.createChildManagementContext(EndpointWebMvcAutoConfiguration.java:198)
+	at org.springframework.boot.actuate.autoconfigure.EndpointWebMvcAutoConfiguration.onApplicationEvent(EndpointWebMvcAutoConfiguration.java:119)
+	at org.springframework.boot.actuate.autoconfigure.EndpointWebMvcAutoConfiguration.onApplicationEvent(EndpointWebMvcAutoConfiguration.java:79)
+	at org.springframework.boot.actuate.autoconfigure.EndpointWebMvcAutoConfiguration$$EnhancerBySpringCGLIB$$92e68f41.onApplicationEvent(<generated>)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:98)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:333)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:776)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:142)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:485)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:120)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:648)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:311)
+	at org.springframework.boot.test.SpringApplicationContextLoader.loadContext(SpringApplicationContextLoader.java:88)
+	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContextInternal(CacheAwareContextLoaderDelegate.java:64)
+	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContext(CacheAwareContextLoaderDelegate.java:91)
+	at org.springframework.test.context.DefaultTestContext.getApplicationContext(DefaultTestContext.java:101)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:109)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:75)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:319)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:212)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:232)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:89)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:71)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:175)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+Caused by: java.lang.TypeNotPresentException: Type org.eclipse.jetty.server.Server not present
+	at java.base/sun.reflect.annotation.TypeNotPresentExceptionProxy.generateException(TypeNotPresentExceptionProxy.java:46)
+	at java.base/sun.reflect.annotation.AnnotationInvocationHandler.invoke(AnnotationInvocationHandler.java:86)
+	at com.sun.proxy.$Proxy33.value(Unknown Source)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.core.annotation.AnnotationUtils.getAnnotationAttributes(AnnotationUtils.java:494)
+	at org.springframework.core.annotation.AnnotatedElementUtils$5.process(AnnotatedElementUtils.java:132)
+	at org.springframework.core.annotation.AnnotatedElementUtils$5.process(AnnotatedElementUtils.java:127)
+	at org.springframework.core.annotation.AnnotatedElementUtils.doProcess(AnnotatedElementUtils.java:206)
+	at org.springframework.core.annotation.AnnotatedElementUtils.process(AnnotatedElementUtils.java:173)
+	at org.springframework.core.annotation.AnnotatedElementUtils.getAllAnnotationAttributes(AnnotatedElementUtils.java:127)
+	at org.springframework.core.type.StandardAnnotationMetadata.getAllAnnotationAttributes(StandardAnnotationMetadata.java:123)
+	at org.springframework.boot.autoconfigure.condition.OnClassCondition.getAttributes(OnClassCondition.java:81)
+	at org.springframework.boot.autoconfigure.condition.OnClassCondition.getMatchOutcome(OnClassCondition.java:45)
+	at org.springframework.boot.autoconfigure.condition.SpringBootCondition.matches(SpringBootCondition.java:44)
+	at org.springframework.context.annotation.ConditionEvaluator.shouldSkip(ConditionEvaluator.java:92)
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:187)
+	at org.springframework.context.annotation.ConfigurationClassParser.processMemberClasses(ConfigurationClassParser.java:294)
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:222)
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:205)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:182)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:152)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:299)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:243)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:254)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:94)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:609)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:464)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:120)
+	at org.springframework.boot.actuate.autoconfigure.EndpointWebMvcAutoConfiguration.createChildManagementContext(EndpointWebMvcAutoConfiguration.java:198)
+	at org.springframework.boot.actuate.autoconfigure.EndpointWebMvcAutoConfiguration.onApplicationEvent(EndpointWebMvcAutoConfiguration.java:119)
+	at org.springframework.boot.actuate.autoconfigure.EndpointWebMvcAutoConfiguration.onApplicationEvent(EndpointWebMvcAutoConfiguration.java:79)
+	at org.springframework.boot.actuate.autoconfigure.EndpointWebMvcAutoConfiguration$$EnhancerBySpringCGLIB$$92e68f41.onApplicationEvent(<generated>)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:98)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:333)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:776)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:142)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:485)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:120)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:648)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:311)
+	at org.springframework.boot.test.SpringApplicationContextLoader.loadContext(SpringApplicationContextLoader.java:88)
+	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContextInternal(CacheAwareContextLoaderDelegate.java:64)
+	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContext(CacheAwareContextLoaderDelegate.java:91)
+	at org.springframework.test.context.DefaultTestContext.getApplicationContext(DefaultTestContext.java:101)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:109)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:75)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:319)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:212)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:232)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:89)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:71)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:175)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+Caused by: java.lang.ClassNotFoundException: org.eclipse.jetty.server.Server
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:581)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:178)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:398)
+	at java.base/sun.reflect.generics.factory.CoreReflectionFactory.makeNamedType(CoreReflectionFactory.java:114)
+	at java.base/sun.reflect.generics.visitor.Reifier.visitClassTypeSignature(Reifier.java:125)
+	at java.base/sun.reflect.generics.tree.ClassTypeSignature.accept(ClassTypeSignature.java:49)
+	at java.base/sun.reflect.annotation.AnnotationParser.parseSig(AnnotationParser.java:440)
+	at java.base/sun.reflect.annotation.AnnotationParser.parseClassValue(AnnotationParser.java:421)
+	at java.base/sun.reflect.annotation.AnnotationParser.lambda$parseClassArray$0(AnnotationParser.java:719)
+	at java.base/sun.reflect.annotation.AnnotationParser.parseArrayElements(AnnotationParser.java:747)
+	at java.base/sun.reflect.annotation.AnnotationParser.parseClassArray(AnnotationParser.java:718)
+	at java.base/sun.reflect.annotation.AnnotationParser.parseArray(AnnotationParser.java:532)
+	at java.base/sun.reflect.annotation.AnnotationParser.parseMemberValue(AnnotationParser.java:356)
+	at java.base/sun.reflect.annotation.AnnotationParser.parseAnnotation2(AnnotationParser.java:287)
+	at java.base/sun.reflect.annotation.AnnotationParser.parseAnnotations2(AnnotationParser.java:121)
+	at java.base/sun.reflect.annotation.AnnotationParser.parseAnnotations(AnnotationParser.java:73)
+	at java.base/java.lang.Class.createAnnotationData(Class.java:3757)
+	at java.base/java.lang.Class.annotationData(Class.java:3746)
+	at java.base/java.lang.Class.getAnnotations(Class.java:3682)
+	at org.springframework.context.annotation.ConfigurationClassParser.asSourceClass(ConfigurationClassParser.java:531)
+	at org.springframework.context.annotation.ConfigurationClassParser$SourceClass.getMemberClasses(ConfigurationClassParser.java:696)
+	at org.springframework.context.annotation.ConfigurationClassParser.processMemberClasses(ConfigurationClassParser.java:292)
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:222)
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:205)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:182)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:152)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:299)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:243)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:254)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:94)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:609)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:464)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:120)
+	at org.springframework.boot.actuate.autoconfigure.EndpointWebMvcAutoConfiguration.createChildManagementContext(EndpointWebMvcAutoConfiguration.java:198)
+	at org.springframework.boot.actuate.autoconfigure.EndpointWebMvcAutoConfiguration.onApplicationEvent(EndpointWebMvcAutoConfiguration.java:119)
+	at org.springframework.boot.actuate.autoconfigure.EndpointWebMvcAutoConfiguration.onApplicationEvent(EndpointWebMvcAutoConfiguration.java:79)
+	at org.springframework.boot.actuate.autoconfigure.EndpointWebMvcAutoConfiguration$$EnhancerBySpringCGLIB$$92e68f41.onApplicationEvent(<generated>)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:98)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:333)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:776)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:142)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:485)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:120)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:648)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:311)
+	at org.springframework.boot.test.SpringApplicationContextLoader.loadContext(SpringApplicationContextLoader.java:88)
+	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContextInternal(CacheAwareContextLoaderDelegate.java:64)
+	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContext(CacheAwareContextLoaderDelegate.java:91)
+	at org.springframework.test.context.DefaultTestContext.getApplicationContext(DefaultTestContext.java:101)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:109)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:75)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:319)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:212)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:232)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:89)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:71)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:175)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+]]></error>
+    <system-out>
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v1.0.2.RELEASE)
+
+2021-09-20 20:50:48.049  INFO 11516 --- [           main] o.a.maven.surefire.booter.ForkedBooter   : Starting ForkedBooter v2.15 on DESKTOP-9P2NR0F with PID 11516 (C:\Users\welcome\.m2\repository\org\apache\maven\surefire\surefire-booter\2.15\surefire-booter-2.15.jar started by welcome in E:\Devops2\maven\spring)
+2021-09-20 20:50:48.051  INFO 11516 --- [           main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4a9869a8: startup date [Mon Sep 20 20:50:48 IST 2021]; root of context hierarchy
+2021-09-20 20:50:48.251  INFO 11516 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'beanNameViewResolver': replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.actuate.autoconfigure.ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration; factoryMethodName=beanNameViewResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/actuate/autoconfigure/ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter; factoryMethodName=beanNameViewResolver; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/web/WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter.class]]
+2021-09-20 20:50:48.326  INFO 11516 --- [           main] o.s.b.f.s.DefaultListableBeanFactory     : Overriding bean definition for bean 'ignoredPathsWebSecurityConfigurerAdapter': replacing [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.autoconfigure.security.SpringBootWebSecurityConfiguration; factoryMethodName=ignoredPathsWebSecurityConfigurerAdapter; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/autoconfigure/security/SpringBootWebSecurityConfiguration.class]] with [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=org.springframework.boot.actuate.autoconfigure.ManagementSecurityAutoConfiguration; factoryMethodName=ignoredPathsWebSecurityConfigurerAdapter; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [org/springframework/boot/actuate/autoconfigure/ManagementSecurityAutoConfiguration.class]]
+2021-09-20 20:50:48.681  INFO 11516 --- [           main] .t.TomcatEmbeddedServletContainerFactory : Server initialized with port: 0
+2021-09-20 20:50:48.686  INFO 11516 --- [           main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2021-09-20 20:50:48.687  INFO 11516 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/7.0.52
+2021-09-20 20:50:48.697  INFO 11516 --- [ost-startStop-1] org.apache.catalina.loader.WebappLoader  : Unknown loader jdk.internal.loader.ClassLoaders$AppClassLoader@2cdf8d8a class jdk.internal.loader.ClassLoaders$AppClassLoader
+2021-09-20 20:50:48.702  INFO 11516 --- [ost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-09-20 20:50:48.703  INFO 11516 --- [ost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 652 ms
+2021-09-20 20:50:49.161  INFO 11516 --- [ost-startStop-1] b.a.s.AuthenticationManagerConfiguration : 
+
+Using default password for application endpoints: b25afa06-cac8-4331-94ac-90dec2559573
+
+
+2021-09-20 20:50:49.175  INFO 11516 --- [ost-startStop-1] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/css/**'], []
+2021-09-20 20:50:49.176  INFO 11516 --- [ost-startStop-1] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/js/**'], []
+2021-09-20 20:50:49.176  INFO 11516 --- [ost-startStop-1] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/images/**'], []
+2021-09-20 20:50:49.176  INFO 11516 --- [ost-startStop-1] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/**/favicon.ico'], []
+2021-09-20 20:50:49.176  INFO 11516 --- [ost-startStop-1] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/info'], []
+2021-09-20 20:50:49.176  INFO 11516 --- [ost-startStop-1] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/health'], []
+2021-09-20 20:50:49.176  INFO 11516 --- [ost-startStop-1] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: Ant [pattern='/error'], []
+2021-09-20 20:50:49.179  INFO 11516 --- [ost-startStop-1] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/beans'], Ant [pattern='/beans/'], Ant [pattern='/beans.*'], Ant [pattern='/shutdown'], Ant [pattern='/shutdown/'], Ant [pattern='/shutdown.*'], Ant [pattern='/dump'], Ant [pattern='/dump/'], Ant [pattern='/dump.*'], Ant [pattern='/trace'], Ant [pattern='/trace/'], Ant [pattern='/trace.*'], Ant [pattern='/configprops'], Ant [pattern='/configprops/'], Ant [pattern='/configprops.*'], Ant [pattern='/autoconfig'], Ant [pattern='/autoconfig/'], Ant [pattern='/autoconfig.*'], Ant [pattern='/metrics'], Ant [pattern='/metrics/'], Ant [pattern='/metrics.*'], Ant [pattern='/env'], Ant [pattern='/env/'], Ant [pattern='/env.*'], Ant [pattern='/mappings'], Ant [pattern='/mappings/'], Ant [pattern='/mappings.*']]], [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@34a40e85, org.springframework.security.web.context.SecurityContextPersistenceFilter@25ef0926, org.springframework.security.web.header.HeaderWriterFilter@7c843f9e, org.springframework.security.web.authentication.logout.LogoutFilter@18f3925f, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@31db0c1e, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@59fe5a49, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4dbe627, org.springframework.security.web.session.SessionManagementFilter@16f158a3, org.springframework.security.web.access.ExceptionTranslationFilter@fbe6a78, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@353e118c]
+2021-09-20 20:50:49.182  INFO 11516 --- [ost-startStop-1] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: OrRequestMatcher [requestMatchers=[Ant [pattern='/**']]], [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1c8a55ff, org.springframework.security.web.context.SecurityContextPersistenceFilter@53e57476, org.springframework.security.web.header.HeaderWriterFilter@60a82029, org.springframework.security.web.authentication.logout.LogoutFilter@fb5a4ee, org.springframework.security.web.authentication.www.BasicAuthenticationFilter@32121260, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4ce69ada, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6d6e4207, org.springframework.security.web.session.SessionManagementFilter@dadf286, org.springframework.security.web.access.ExceptionTranslationFilter@765d2838, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1022465e]
+2021-09-20 20:50:49.246  INFO 11516 --- [ost-startStop-1] o.s.b.c.e.ServletRegistrationBean        : Mapping servlet: 'dispatcherServlet' to [/]
+2021-09-20 20:50:49.247  INFO 11516 --- [ost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'metricFilter' to: [/*]
+2021-09-20 20:50:49.248  INFO 11516 --- [ost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2021-09-20 20:50:49.248  INFO 11516 --- [ost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'springSecurityFilterChain' to: [/*]
+2021-09-20 20:50:49.249  INFO 11516 --- [ost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'applicationContextIdFilter' to: [/*]
+2021-09-20 20:50:49.249  INFO 11516 --- [ost-startStop-1] o.s.b.c.embedded.FilterRegistrationBean  : Mapping filter: 'webRequestLoggingFilter' to: [/*]
+2021-09-20 20:50:49.331  INFO 11516 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-09-20 20:50:49.336  INFO 11516 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/foo],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.lang.String springexample.actuator.SampleController.foo()
+2021-09-20 20:50:49.337  INFO 11516 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public java.util.Map&lt;java.lang.String, java.lang.String&gt; springexample.actuator.SampleController.helloWorld()
+2021-09-20 20:50:49.338  INFO 11516 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" onto public org.springframework.http.ResponseEntity&lt;java.util.Map&lt;java.lang.String, java.lang.Object&gt;&gt; org.springframework.boot.actuate.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2021-09-20 20:50:49.338  INFO 11516 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],methods=[],params=[],headers=[],consumes=[],produces=[text/html],custom=[]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.actuate.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest)
+2021-09-20 20:50:49.350  INFO 11516 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-09-20 20:50:49.351  INFO 11516 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-09-20 20:50:49.421  INFO 11516 --- [           main] .CrshAutoConfiguration$CrshBootstrapBean : Configuring property auth=spring from properties
+2021-09-20 20:50:49.421  INFO 11516 --- [           main] .CrshAutoConfiguration$CrshBootstrapBean : Configuring property ssh.port=2222 from properties
+2021-09-20 20:50:49.421  INFO 11516 --- [           main] .CrshAutoConfiguration$CrshBootstrapBean : Configuring property auth.spring.roles=ADMIN from properties
+2021-09-20 20:50:49.433  INFO 11516 --- [           main] org.crsh.ssh.SSHPlugin                   : Booting SSHD
+2021-09-20 20:50:49.440  INFO 11516 --- [           main] org.crsh.ssh.term.SSHLifeCycle           : About to start CRaSSHD
+2021-09-20 20:50:49.452  INFO 11516 --- [           main] org.crsh.ssh.term.SSHLifeCycle           : CRaSSHD started on port 2222
+2021-09-20 20:50:49.466  INFO 11516 --- [           main] o.s.b.a.e.jmx.EndpointMBeanExporter      : Registering beans for JMX exposure on startup
+2021-09-20 20:50:49.467  INFO 11516 --- [           main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 0
+2021-09-20 20:50:49.468  INFO 11516 --- [           main] o.s.b.a.e.jmx.EndpointMBeanExporter      : Located managed bean 'requestMappingEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=requestMappingEndpoint]
+2021-09-20 20:50:49.482  INFO 11516 --- [           main] o.s.b.a.e.jmx.EndpointMBeanExporter      : Located managed bean 'environmentEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=environmentEndpoint]
+2021-09-20 20:50:49.487  INFO 11516 --- [           main] o.s.b.a.e.jmx.EndpointMBeanExporter      : Located managed bean 'healthEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=healthEndpoint]
+2021-09-20 20:50:49.498  INFO 11516 --- [           main] o.s.b.a.e.jmx.EndpointMBeanExporter      : Located managed bean 'beansEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=beansEndpoint]
+2021-09-20 20:50:49.502  INFO 11516 --- [           main] o.s.b.a.e.jmx.EndpointMBeanExporter      : Located managed bean 'infoEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=infoEndpoint]
+2021-09-20 20:50:49.510  INFO 11516 --- [           main] o.s.b.a.e.jmx.EndpointMBeanExporter      : Located managed bean 'metricsEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=metricsEndpoint]
+2021-09-20 20:50:49.514  INFO 11516 --- [           main] o.s.b.a.e.jmx.EndpointMBeanExporter      : Located managed bean 'traceEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=traceEndpoint]
+2021-09-20 20:50:49.520  INFO 11516 --- [           main] o.s.b.a.e.jmx.EndpointMBeanExporter      : Located managed bean 'dumpEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=dumpEndpoint]
+2021-09-20 20:50:49.531  INFO 11516 --- [           main] o.s.b.a.e.jmx.EndpointMBeanExporter      : Located managed bean 'autoConfigurationAuditEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=autoConfigurationAuditEndpoint]
+2021-09-20 20:50:49.534  INFO 11516 --- [           main] o.s.b.a.e.jmx.EndpointMBeanExporter      : Located managed bean 'shutdownEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=shutdownEndpoint]
+2021-09-20 20:50:49.536  INFO 11516 --- [           main] o.s.b.a.e.jmx.EndpointMBeanExporter      : Located managed bean 'configurationPropertiesReportEndpoint': registering with JMX server as MBean [org.springframework.boot:type=Endpoint,name=configurationPropertiesReportEndpoint]
+2021-09-20 20:50:49.548  INFO 11516 --- [           main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5fdb7394: startup date [Mon Sep 20 20:50:49 IST 2021]; parent: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4a9869a8
+2021-09-20 20:50:49.552  INFO 11516 --- [           main] o.apache.catalina.core.StandardService   : Stopping service Tomcat
+2021-09-20 20:50:49.561 ERROR 11516 --- [ost-startStop-1] o.a.catalina.loader.WebappClassLoader    : Failed to clear ResourceBundle references for web application []
+
+java.lang.NoSuchFieldException: loaderRef
+	at java.base/java.lang.Class.getDeclaredField(Class.java:2411)
+	at org.apache.catalina.loader.WebappClassLoader.clearReferencesResourceBundles(WebappClassLoader.java:2785)
+	at org.apache.catalina.loader.WebappClassLoader.clearReferences(WebappClassLoader.java:2024)
+	at org.apache.catalina.loader.WebappClassLoader.stop(WebappClassLoader.java:1906)
+	at org.apache.catalina.loader.WebappLoader.stopInternal(WebappLoader.java:661)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:232)
+	at org.apache.catalina.core.StandardContext.stopInternal(StandardContext.java:5702)
+	at org.apache.catalina.util.LifecycleBase.stop(LifecycleBase.java:232)
+	at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1575)
+	at org.apache.catalina.core.ContainerBase$StopChild.call(ContainerBase.java:1564)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+
+2021-09-20 20:50:49.568  INFO 11516 --- [           main] .b.l.ClasspathLoggingApplicationListener : Application failed to start with classpath: unknown
+2021-09-20 20:50:49.568  INFO 11516 --- [           main] utoConfigurationReportLoggingInitializer : 
+
+Error starting ApplicationContext. To display the auto-configuration report enabled debug logging (start with --debug)
+
+
+2021-09-20 20:50:49.569  INFO 11516 --- [           main] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4a9869a8: startup date [Mon Sep 20 20:50:48 IST 2021]; root of context hierarchy
+2021-09-20 20:50:49.569  INFO 11516 --- [           main] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5fdb7394: startup date [Mon Sep 20 20:50:49 IST 2021]; parent: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4a9869a8
+2021-09-20 20:50:49.572  WARN 11516 --- [           main] ationConfigEmbeddedWebApplicationContext : Exception thrown from ApplicationListener handling ContextClosedEvent
+
+java.lang.IllegalStateException: ApplicationEventMulticaster not initialized - call 'refresh' before multicasting events via the context: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5fdb7394: startup date [Mon Sep 20 20:50:49 IST 2021]; parent: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4a9869a8
+	at org.springframework.context.support.AbstractApplicationContext.getApplicationEventMulticaster(AbstractApplicationContext.java:346)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:333)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:880)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.doClose(EmbeddedWebApplicationContext.java:152)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:841)
+	at org.springframework.boot.actuate.autoconfigure.EndpointWebMvcAutoConfiguration$1.onApplicationEvent(EndpointWebMvcAutoConfiguration.java:192)
+	at org.springframework.boot.actuate.autoconfigure.EndpointWebMvcAutoConfiguration$1.onApplicationEvent(EndpointWebMvcAutoConfiguration.java:188)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:98)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:333)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:880)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.doClose(EmbeddedWebApplicationContext.java:152)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:841)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:329)
+	at org.springframework.boot.test.SpringApplicationContextLoader.loadContext(SpringApplicationContextLoader.java:88)
+	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContextInternal(CacheAwareContextLoaderDelegate.java:64)
+	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContext(CacheAwareContextLoaderDelegate.java:91)
+	at org.springframework.test.context.DefaultTestContext.getApplicationContext(DefaultTestContext.java:101)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:109)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:75)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:319)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:212)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:232)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:89)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:71)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:175)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+
+2021-09-20 20:50:49.576  WARN 11516 --- [           main] ationConfigEmbeddedWebApplicationContext : Exception thrown from LifecycleProcessor on context close
+
+java.lang.IllegalStateException: LifecycleProcessor not initialized - call 'refresh' before invoking lifecycle methods via the context: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5fdb7394: startup date [Mon Sep 20 20:50:49 IST 2021]; parent: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4a9869a8
+	at org.springframework.context.support.AbstractApplicationContext.getLifecycleProcessor(AbstractApplicationContext.java:359)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:888)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.doClose(EmbeddedWebApplicationContext.java:152)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:841)
+	at org.springframework.boot.actuate.autoconfigure.EndpointWebMvcAutoConfiguration$1.onApplicationEvent(EndpointWebMvcAutoConfiguration.java:192)
+	at org.springframework.boot.actuate.autoconfigure.EndpointWebMvcAutoConfiguration$1.onApplicationEvent(EndpointWebMvcAutoConfiguration.java:188)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:98)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:333)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:880)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.doClose(EmbeddedWebApplicationContext.java:152)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:841)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:329)
+	at org.springframework.boot.test.SpringApplicationContextLoader.loadContext(SpringApplicationContextLoader.java:88)
+	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContextInternal(CacheAwareContextLoaderDelegate.java:64)
+	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContext(CacheAwareContextLoaderDelegate.java:91)
+	at org.springframework.test.context.DefaultTestContext.getApplicationContext(DefaultTestContext.java:101)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:109)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:75)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:319)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:212)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:232)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:89)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:71)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:175)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+
+2021-09-20 20:50:49.577  INFO 11516 --- [           main] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 0
+2021-09-20 20:50:49.577  INFO 11516 --- [           main] o.s.b.a.e.jmx.EndpointMBeanExporter      : Unregistering JMX-exposed beans on shutdown
+2021-09-20 20:50:49.578  INFO 11516 --- [           main] org.crsh.ssh.SSHPlugin                   : Shutting down SSHD
+2021-09-20 20:50:49.583 ERROR 11516 --- [           main] o.s.test.context.TestContextManager      : Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@63187d63] to prepare test instance [springexample.actuator.ManagementAddressActuatorApplicationTests@740c4868]
+
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContext(CacheAwareContextLoaderDelegate.java:99)
+	at org.springframework.test.context.DefaultTestContext.getApplicationContext(DefaultTestContext.java:101)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:109)
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:75)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:319)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:212)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:232)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:89)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:238)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:63)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:236)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:53)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:229)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:71)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:309)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:175)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.execute(JUnit4Provider.java:264)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.executeTestSet(JUnit4Provider.java:153)
+	at org.apache.maven.surefire.junit4.JUnit4Provider.invoke(JUnit4Provider.java:124)
+	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:200)
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:153)
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:103)
+Caused by: java.lang.IllegalStateException: Failed to introspect annotations: class org.springframework.boot.autoconfigure.web.EmbeddedServletContainerAutoConfiguration$EmbeddedJetty
+	at org.springframework.core.annotation.AnnotatedElementUtils.process(AnnotatedElementUtils.java:177)
+	at org.springframework.core.annotation.AnnotatedElementUtils.getAllAnnotationAttributes(AnnotatedElementUtils.java:127)
+	at org.springframework.core.type.StandardAnnotationMetadata.getAllAnnotationAttributes(StandardAnnotationMetadata.java:123)
+	at org.springframework.boot.autoconfigure.condition.OnClassCondition.getAttributes(OnClassCondition.java:81)
+	at org.springframework.boot.autoconfigure.condition.OnClassCondition.getMatchOutcome(OnClassCondition.java:45)
+	at org.springframework.boot.autoconfigure.condition.SpringBootCondition.matches(SpringBootCondition.java:44)
+	at org.springframework.context.annotation.ConditionEvaluator.shouldSkip(ConditionEvaluator.java:92)
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:187)
+	at org.springframework.context.annotation.ConfigurationClassParser.processMemberClasses(ConfigurationClassParser.java:294)
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:222)
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:205)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:182)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:152)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:299)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:243)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:254)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:94)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:609)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:464)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:120)
+	at org.springframework.boot.actuate.autoconfigure.EndpointWebMvcAutoConfiguration.createChildManagementContext(EndpointWebMvcAutoConfiguration.java:198)
+	at org.springframework.boot.actuate.autoconfigure.EndpointWebMvcAutoConfiguration.onApplicationEvent(EndpointWebMvcAutoConfiguration.java:119)
+	at org.springframework.boot.actuate.autoconfigure.EndpointWebMvcAutoConfiguration.onApplicationEvent(EndpointWebMvcAutoConfiguration.java:79)
+	at org.springframework.boot.actuate.autoconfigure.EndpointWebMvcAutoConfiguration$$EnhancerBySpringCGLIB$$92e68f41.onApplicationEvent(&lt;generated&gt;)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:98)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:333)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:776)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:142)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:485)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:120)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:648)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:311)
+	at org.springframework.boot.test.SpringApplicationContextLoader.loadContext(SpringApplicationContextLoader.java:88)
+	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContextInternal(CacheAwareContextLoaderDelegate.java:64)
+	at org.springframework.test.context.CacheAwareContextLoaderDelegate.loadContext(CacheAwareContextLoaderDelegate.java:91)
+	... 25 common frames omitted
+Caused by: java.lang.IllegalStateException: Could not obtain annotation attribute values
+	at org.springframework.core.annotation.AnnotationUtils.getAnnotationAttributes(AnnotationUtils.java:526)
+	at org.springframework.core.annotation.AnnotatedElementUtils$5.process(AnnotatedElementUtils.java:132)
+	at org.springframework.core.annotation.AnnotatedElementUtils$5.process(AnnotatedElementUtils.java:127)
+	at org.springframework.core.annotation.AnnotatedElementUtils.doProcess(AnnotatedElementUtils.java:206)
+	at org.springframework.core.annotation.AnnotatedElementUtils.process(AnnotatedElementUtils.java:173)
+	... 59 common frames omitted
+Caused by: java.lang.reflect.InvocationTargetException: null
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.springframework.core.annotation.AnnotationUtils.getAnnotationAttributes(AnnotationUtils.java:494)
+	... 63 common frames omitted
+Caused by: java.lang.TypeNotPresentException: Type org.eclipse.jetty.server.Server not present
+	at java.base/sun.reflect.annotation.TypeNotPresentExceptionProxy.generateException(TypeNotPresentExceptionProxy.java:46)
+	at java.base/sun.reflect.annotation.AnnotationInvocationHandler.invoke(AnnotationInvocationHandler.java:86)
+	at com.sun.proxy.$Proxy33.value(Unknown Source)
+	... 68 common frames omitted
+Caused by: java.lang.ClassNotFoundException: org.eclipse.jetty.server.Server
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:581)
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:178)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:521)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Class.java:398)
+	at java.base/sun.reflect.generics.factory.CoreReflectionFactory.makeNamedType(CoreReflectionFactory.java:114)
+	at java.base/sun.reflect.generics.visitor.Reifier.visitClassTypeSignature(Reifier.java:125)
+	at java.base/sun.reflect.generics.tree.ClassTypeSignature.accept(ClassTypeSignature.java:49)
+	at java.base/sun.reflect.annotation.AnnotationParser.parseSig(AnnotationParser.java:440)
+	at java.base/sun.reflect.annotation.AnnotationParser.parseClassValue(AnnotationParser.java:421)
+	at java.base/sun.reflect.annotation.AnnotationParser.lambda$parseClassArray$0(AnnotationParser.java:719)
+	at java.base/sun.reflect.annotation.AnnotationParser.parseArrayElements(AnnotationParser.java:747)
+	at java.base/sun.reflect.annotation.AnnotationParser.parseClassArray(AnnotationParser.java:718)
+	at java.base/sun.reflect.annotation.AnnotationParser.parseArray(AnnotationParser.java:532)
+	at java.base/sun.reflect.annotation.AnnotationParser.parseMemberValue(AnnotationParser.java:356)
+	at java.base/sun.reflect.annotation.AnnotationParser.parseAnnotation2(AnnotationParser.java:287)
+	at java.base/sun.reflect.annotation.AnnotationParser.parseAnnotations2(AnnotationParser.java:121)
+	at java.base/sun.reflect.annotation.AnnotationParser.parseAnnotations(AnnotationParser.java:73)
+	at java.base/java.lang.Class.createAnnotationData(Class.java:3757)
+	at java.base/java.lang.Class.annotationData(Class.java:3746)
+	at java.base/java.lang.Class.getAnnotations(Class.java:3682)
+	at org.springframework.context.annotation.ConfigurationClassParser.asSourceClass(ConfigurationClassParser.java:531)
+	at org.springframework.context.annotation.ConfigurationClassParser$SourceClass.getMemberClasses(ConfigurationClassParser.java:696)
+	at org.springframework.context.annotation.ConfigurationClassParser.processMemberClasses(ConfigurationClassParser.java:292)
+	... 51 common frames omitted
+
+</system-out>
+  </testcase>
+</testsuite>
